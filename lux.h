@@ -19,7 +19,11 @@
 #include <mach-o/dyld.h>
 #endif
 
-void print_err(char *);
+#define BUFF_STEP 255
+char *text;
 void read_file(char *);
+
+#define CLEAR_SCREEN "\033[1;1H\033[2J"
+void print_err(char *);
 
 #endif

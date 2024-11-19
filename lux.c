@@ -10,7 +10,10 @@ void print_err(char *errmsg) {
 int main(int argc, char **argv) {
 
   if (argc == 2 && argv[1]) {
+    printf(CLEAR_SCREEN);
     read_file(argv[1]);
+    while (1) {
+    }
   } else {
     print_err(
         "ERR! No file provided, expected exec command: lux filename|path");
